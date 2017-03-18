@@ -1,5 +1,5 @@
-# ./test_helper.rb
-
+require 'coveralls'
+Coveralls.wear!
 import unittest
 import rpn
 
