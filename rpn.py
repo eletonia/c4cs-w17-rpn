@@ -7,6 +7,8 @@ from termcolor import colored, cprint
 OPERATORS = {
 	'+': operator.add,
 	'-': operator.sub,
+	'*': operator.mul,
+ 	'/': operator.truediv,
 	'^': operator.pow,
 }
 
