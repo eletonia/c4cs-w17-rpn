@@ -1,4 +1,3 @@
-# ./test_helper.rb
 import readline
 import unittest
 import rpn

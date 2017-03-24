@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import operator
+import sys
+from termcolor import colored, cprint
 
 OPERATORS = {
 	'+': operator.add,
@@ -25,8 +27,13 @@ def calculate(arg):
 	return stack.pop()
 
 def main():
+	print colored('hello', 'red'), colored('world', 'green')
 	while True:
 		result = calculate(input('rpn calc> '))
+		if result < 0:
+			print ('negative')
+		else:
+			print('positive')
 		print("Result:", result)
 
 if __name__ == '__main__':
