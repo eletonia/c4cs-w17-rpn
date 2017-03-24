@@ -4,7 +4,6 @@ python:
 install: 
 	- pip install coveralls 
 #command to run tests
-script: 
-	coverage run --mak
+script: make test
 after_success:
 	coveralls
