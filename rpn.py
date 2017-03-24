@@ -27,13 +27,13 @@ def calculate(arg):
 	return stack.pop()
 
 def main():
-	print colored('hello', 'red'), colored('world', 'green')
 	while True:
 		result = calculate(input('rpn calc> '))
+		print("Result:")
 		if result < 0:
-			print ('negative')
+			print (colored(result, 'red'))
 		else:
-			print('positive')
+			print (colored(result, 'green'))
 		print("Result:", result)
 
 if __name__ == '__main__':
