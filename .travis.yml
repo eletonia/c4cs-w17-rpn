@@ -2,7 +2,6 @@ language: python
 python: 
  - "3.5"
 #command to run tests
-script: 
- coverage run make test
+script: make test
 after_success:
  - coveralls
