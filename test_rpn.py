@@ -1,7 +1,9 @@
 # ./test_helper.rb
-
+import readline
 import unittest
 import rpn
+import sys
+from termcolor import colored, cprint
 
 class TestBasics(unittest.TestCase):
 	def test_add(self):
